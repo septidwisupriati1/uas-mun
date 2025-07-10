@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaptopGuide - Temukan Laptop Impianmu!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gradient-to-br from-indigo-200 via-pink-100 to-yellow-50 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-indigo-600">LaptopStore</h1>
+    <ul class="hidden md:flex space-x-6 text-gray-600">
+      <li><a href="index.html" class="hover:text-indigo-600">Beranda</a></li>
+      <li><a href="produk.html" class="hover:text-indigo-600">Produk</a></li>
+      <li><a href="rekomendasi.html" class="hover:text-indigo-600">Rekomendasi</a></li>
+      <li><a href="tentang.html" class="hover:text-indigo-600">Tentang</a></li>
+      <li><a href="ulasan.html" class="hover:text-indigo-600">Ulasan</a></li>
+    </ul>
+    <button class="md:hidden bg-indigo-500 text-white px-3 py-2 rounded">Menu</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-gradient-to-r from-indigo-300 to-pink-200">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+      Temukan Laptop Impianmu!
+    </h2>
+    <p class="mt-4 text-lg md:text-xl text-white">Mulai dari kebutuhan sekolah, kerja, hingga gaming ekstrem</p>
+    <a href="produk.html" class="mt-6 inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full hover:bg-indigo-100 transition">
+  Lihat Semua Produk
+</a>
+
+  </section>
+
+  <!-- Katalog Produk -->
+  <section class="py-14 px-6 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10 text-indigo-700">Produk Unggulan</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Produk 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+       <div class="bg-white rounded-lg shadow overflow-hidden">
+  <img src="download.jpeg" alt="Laptop Lokal" class="w-full object-cover h-[250px]">
+  <div class="p-5">
+    <h4 class="text-xl font-bold text-gray-800">WorkPro Z15</h4>
+    <p class="text-gray-600 mt-2">Laptop handal untuk pekerjaan harian dan multitasking.</p>
+    <span class="block text-indigo-600 font-bold mt-3">Rp 8.499.000</span>
+  </div>
+</div>
+      </div>
+      <!-- Produk 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+       <img src="ultrabookpro14.jpeg" alt="Laptop Bisnis" class="w-full object-cover h-[250px]">
+        <div class="p-5">
+          <h4 class="text-xl font-bold text-gray-800">UltraBook Pro 14</h4>
+          <p class="text-gray-600 mt-2">Tipis, ringan, dan cepat untuk produktivitas kerja.</p>
+          <span class="block text-pink-600 font-bold mt-3">Rp 14.500.000</span>
+        </div>
+      </div>
+      <!-- Produk 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+       <img src="SmartBookStudent.jpeg" alt="Laptop Pelajar" class="w-full object-cover h-[250px]">
+        <div class="p-5">
+          <h4 class="text-xl font-bold text-gray-800">SmartBook Student</h4>
+          <p class="text-gray-600 mt-2">Laptop hemat dan tangguh untuk belajar online.</p>
+          <span class="block text-pink-600 font-bold mt-3">Rp 5.200.000</span>
+        </div>
+      </div>
+      <!-- Produk 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img src="ASUSZenPower13.jpeg" alt="Laptop asus" class="w-full object-cover h-[250px]">
+        <div class="p-5">
+          <h4 class="text-xl font-bold text-gray-800">ASUS ZenPower 13</h4>
+          <p class="text-gray-600 mt-2">Laptop premium dengan layar OLED dan AMD Ryzen 7.</p>
+          <span class="block text-pink-600 font-bold mt-3">Rp 16.800.000</span>
+        </div>
+      </div>
+      <!-- Produk 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img src="DellPrecision15.jpeg" alt="Dell" class="w-full object-cover h-[250px]">
+        <div class="p-5">
+          <h4 class="text-xl font-bold text-gray-800">Dell Precision 15</h4>
+          <p class="text-gray-600 mt-2">Dibuat untuk profesional desain & rekayasa.</p>
+          <span class="block text-pink-600 font-bold mt-3">Rp 22.000.000</span>
+        </div>
+      </div>
+      <!-- Produk 6 -->
+      <a href="detail-macbook-air-m2.html" class="block">
+  <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="laptop.jpeg" alt="1" class="w-full object-cover h-[250px]">
+    <div class="p-4">
+      <h3 class="font-bold text-lg">MacBook Air M2</h3>
+      <p class="text-sm text-gray-500">Ringan, cepat, dan stylish untuk profesional.</p>
+      <span class="text-pink-600 font-semibold block mt-2">Rp 18.500.000</span>
+    </div>
+  </div>
+</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 mt-12">
+    <div class="max-w-7xl mx-auto text-center">
+      <p>&copy; 2025 LaptopStore. Semua Hak Dilindungi.</p>
+      <p class="text-sm mt-1">Follow kami di Instagram & TikTok @LaptopStore</p>
+    </div>
+  </footer>
+
+</body>
+</html>

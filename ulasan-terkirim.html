@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ulasan Terkirim - LaptopGuide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="relative bg-gray-100 font-sans">
+
+  <!-- Latar Belakang Ulasan -->
+  <div class="absolute inset-0 z-0 overflow-y-auto opacity-40 blur-sm pointer-events-none">
+    <div class="grid md:grid-cols-3 gap-4 p-6">
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Laptop ini bener-bener ringan dan cocok buat mahasiswa. Performa lumayan dan baterai tahan lama."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Dina, Mahasiswa</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Saya pakai untuk desain grafis, ASUS Vivobook ini cocok banget! Layarnya tajam dan responsif."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Rama, Freelance Designer</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Lenovo saya udah 1 tahun dan masih tangguh. Keyboard nyaman dan jarang lag."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Dedi, Guru</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Saya beli HP Pavilion karena bisa diputar. Cocok banget buat kerja hybrid!"</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Yani, Pegawai Kantor</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"ROG Zephyrus G14 punya power luar biasa buat main dan editing!"</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Ardi, Konten Kreator</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Dell Inspiron ini awet banget. Harga masuk akal, performa stabil."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Rina, Pegawai Swasta</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Acer Aspire 5 sangat cocok buat kerja kantoran, ringan dan tidak panas."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Fikri, Staff Admin</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"MSI Modern 14 enak buat edit video. Proses cepat dan tampilan stylish."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Vivi, Content Creator</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Surface Laptop Go nyaman banget dipakai saat presentasi, ringan dan layar cerah."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Farah, Dosen</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Saya suka MacBook Air M2 karena sangat awet baterainya dan super cepat."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Niko, Programmer</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Laptop HP saya bisa diandalkan untuk editing ringan dan meeting online tiap hari."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Lia, Customer Support</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p class="italic text-sm">"Lenovo IdeaPad Gaming 3 cocok untuk gaming kasual dan desain grafis ringan."</p>
+        <h4 class="mt-2 text-indigo-600 font-medium text-sm">— Reza, Siswa SMK</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konfirmasi Ulasan -->
+  <div class="relative z-10 flex items-center justify-center min-h-screen px-4 fade-in">
+    <div class="bg-white p-10 rounded-xl shadow-2xl max-w-xl text-center">
+      <svg class="mx-auto mb-4 w-16 h-16 text-green-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+      </svg>
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">Terima Kasih!</h2>
+      <p class="text-gray-600 mb-6">Ulasanmu telah berhasil dikirim dan akan membantu pengguna lainnya dalam memilih laptop terbaik!</p>
+
+      <!-- Tombol Aksi -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="ulasan.html" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition">Lihat Semua Ulasan</a>
+        <a href="ulasan.html" class="bg-gray-300 text-gray-800 px-6 py-2 rounded-full hover:bg-gray-400 transition">Kembali</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

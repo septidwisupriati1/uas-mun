@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rekomendasi Laptop Terpopuler 2024-2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-tr from-blue-50 via-purple-50 to-pink-50 font-sans min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-indigo-600">LaptopGuide</h1>
+    <ul class="hidden md:flex space-x-6 text-gray-600">
+      <li><a href="index.html" class="hover:text-indigo-600">Beranda</a></li>
+      <li><a href="produk.html" class="hover:text-indigo-600">Produk</a></li>
+      <li><a href="tentang.html" class="hover:text-indigo-600">Tentang</a></li>
+      <li><a href="rekomendasi.html" class="text-indigo-700 font-semibold">Rekomendasi</a></li>
+      <li><a href="ulasan.html" class="hover:text-indigo-600">Ulasan</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-14 px-4 bg-gradient-to-r from-pink-200 to-indigo-300">
+    <h2 class="text-4xl font-bold text-white drop-shadow-md">Grafik Laptop Terpopuler</h2>
+    <p class="text-white text-lg mt-2">Berdasarkan data pembelian dari Juli 2024 – Juni 2025</p>
+  </header>
+
+  <!-- Grafik -->
+  <section class="max-w-5xl mx-auto py-16 px-4 bg-white shadow-lg rounded-xl mt-10">
+    <h3 class="text-2xl font-semibold text-center text-indigo-700 mb-6">Jumlah Laptop Terjual per Bulan</h3>
+    <canvas id="laptopChart" height="120"></canvas>
+    <!-- Penjelasan Laptop Terlaris -->
+<section class="max-w-4xl mx-auto py-10 px-4 mt-10">
+  <h3 class="text-2xl font-bold text-indigo-700 text-center mb-6">Laptop Terlaris Setiap Bulan</h3>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
+    <p><strong>Juli 2024:</strong> ASUS VivoBook 14 X1402ZA menjadi favorit pelajar karena harga terjangkau dan performa Intel Core i3 Gen-12 yang cukup untuk kebutuhan sekolah.</p>
+    <p><strong>Agustus 2024:</strong> Acer Aspire 5 Slim A514 banyak dipilih oleh mahasiswa baru karena desain tipis, layar 14 inci, dan RAM 8GB.</p>
+    <p><strong>September 2024:</strong> Lenovo IdeaPad 3 Ryzen 5 naik daun karena cocok untuk multitasking dan editing ringan.</p>
+    <p><strong>Oktober 2024:</strong> HP Pavilion x360 14 sangat populer di kalangan profesional muda karena fleksibel (touchscreen + bisa dilipat) dan ringan dibawa.</p>
+    <p><strong>November 2024:</strong> ASUS TUF Gaming F15 mencatat penjualan tertinggi karena diskon besar saat promo 11.11 dan performa gaming yang tangguh.</p>
+    <p><strong>Desember 2024:</strong> MacBook Air M2 menjadi pilihan utama para pekerja kreatif menjelang akhir tahun karena performa tinggi dan daya tahan baterai lama.</p>
+    <p><strong>Januari 2025:</strong> Lenovo ThinkPad E14 Gen 4 laris di kalangan corporate karena build quality tangguh dan fitur keamanan lengkap.</p>
+    <p><strong>Februari 2025:</strong> ASUS ROG Zephyrus G14 mendominasi pasar gamer karena desain premium dan performa AMD Ryzen 9 + RTX.</p>
+    <p><strong>Maret 2025:</strong> Dell Inspiron 15 3000 dipilih oleh pelajar karena harga ekonomis dan cukup untuk penggunaan harian.</p>
+    <p><strong>April 2025:</strong> Microsoft Surface Laptop Go 2 banyak dibeli oleh pengguna mobile karena sangat ringan dan cocok untuk presentasi.</p>
+    <p><strong>Mei 2025:</strong> MSI Modern 14 C12M populer di kalangan content creator pemula karena kombinasi RAM 16GB dan SSD cepat.</p>
+    <p><strong>Juni 2025:</strong> Acer Swift X 14 laris karena performa untuk editing video + GPU terintegrasi, ideal untuk profesional multimedia.</p>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 text-center mt-20">
+    <p>&copy; 2025 LaptopGuide. Semua Hak Dilindungi.</p>
+    <p class="text-sm mt-1">Follow kami di @LaptopGuide</p>
+  </footer>
+
+  <!-- Script Chart.js -->
+  <script>
+    const ctx = document.getElementById('laptopChart').getContext('2d');
+    const laptopChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Jul 2024', 'Agu 2024', 'Sep 2024', 'Okt 2024', 'Nov 2024', 'Des 2024',
+          'Jan 2025', 'Feb 2025', 'Mar 2025', 'Apr 2025', 'Mei 2025', 'Jun 2025'
+        ],
+        datasets: [{
+          label: 'Jumlah Laptop Terjual',
+          data: [120, 150, 180, 130, 200, 240, 300, 280, 260, 220, 190, 210],
+          backgroundColor: 'rgba(99, 102, 241, 0.6)',
+          borderColor: 'rgba(99, 102, 241, 1)',
+          borderWidth: 2,
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              color: '#4B5563'
+            }
+          },
+          title: {
+            display: true,
+            text: 'Statistik Penjualan Laptop Terlaris 2024 - 2025',
+            color: '#1E3A8A',
+            font: {
+              size: 18
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              color: '#4B5563'
+            }
+          },
+          x: {
+            ticks: {
+              color: '#4B5563'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
